@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    color: rgb(222, 22, 215);
+}
+
+p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: red;
+    text-decoration-line: underline;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40vh;
+    width: 60%;
+    margin: 2rem auto 0 auto;
+    background-color: cornflowerblue;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 80vh;
+}
+
+.container .section label {
+    width: 20%;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: rgb(0, 34, 255);
+    font: bold;
+    position: relative;
+    bottom: 5px;
+    margin-right: 1rem;
+}
+
+.container .section input {
+    width: 55%;
+    height: 5vh;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: none;
+    text-indent: 4px;
+    margin-right: 1rem;
+
+}
+
+.container .section button {
+    width: 25%;
+    height: 5vh;
+    border-radius: 8px;
+    border: 1px solid orchid;
+    background-color: orchid;
+    color: white;
+    font-size: 1rem;
+    position: relative;
+    bottom: 8px;
+}
+
+.container .section button:hover {
+    background-color: rgb(222, 66, 216);
+}
+
+/* Tablets */
+@media(max-width:768px) {
+
+    .container {
+        width: 70%;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    .container .section label {
+        font-size: 1.2rem;
+    }
+
+    .container .section button {
+        font-size: 1rem;
+    }
+    .container .section input::placeholder{
+        font-size: 0.7rem;
+    }
+}
+
+
+/* Mobile */
+@media(max-width:500px) {
+
+    .container {
+        width: 70%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .container .section label {
+        font-size: 1rem;
+    }
+
+    .container .section button {
+        font-size: 0.8rem;
+    }
+
+    .container .section input::placeholder{
+        font-size: 0.5rem;
+    }
+
+}
